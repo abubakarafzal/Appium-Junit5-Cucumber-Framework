@@ -11,14 +11,14 @@ import static io.github.the_sdet.cucumber.CucumberUtils.*;
 /**
  * Class to handle common utilities
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 public class CommonUtils {
     /**
      * Attaches screenshot to the Cucumber report based on the configuration.
      *
      * @param scenario The Scenario object from Cucumber.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void attachScreenshotPerConfig(Scenario scenario) {
         Properties properties = ConfigReader.getProperties();

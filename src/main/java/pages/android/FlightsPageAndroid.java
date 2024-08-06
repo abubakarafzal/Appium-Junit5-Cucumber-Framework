@@ -8,7 +8,7 @@ import static io.github.the_sdet.web.Utils.customizeXpath;
 /**
  * Class to maintain elements of Flights page for Android
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
 public class FlightsPageAndroid extends FlightsPageBase {

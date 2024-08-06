@@ -1,4 +1,4 @@
-#Author: Pabitra Swain (contact.the.sdet@gmail.com)
+#Author:Abu bakar
 @home
 Feature: Home Page
 

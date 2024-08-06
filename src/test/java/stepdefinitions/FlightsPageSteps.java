@@ -11,7 +11,7 @@ import static engine.Engine.getDriver;
 /**
  * Step Definitions for Flights Page Tests
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 public class FlightsPageSteps {
     MenuPage menuPage = new MenuPage(getDriver());

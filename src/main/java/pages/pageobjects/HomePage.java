@@ -19,7 +19,7 @@ import static io.github.the_sdet.cucumber.CucumberUtils.logToReport;
 /**
  * Page Object class for Home Page to have modular methods to handle element interactions
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings("unused")
 public class HomePage extends AppiumUtils {
@@ -29,7 +29,7 @@ public class HomePage extends AppiumUtils {
      * Constructor to initialize AppiumUtils.
      *
      * @param driver The Appium Driver (AndroidDriver/IOSDriver) instance to use.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public HomePage(AppiumDriver driver) {
         super(driver);
@@ -39,7 +39,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Skip the language selection if visible.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void skipLanguageSelection() {
         if (waitAndCheckIsVisible(homePage.getSelectYourLanguageLabel(), Duration.ofSeconds(5)))
@@ -49,7 +49,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Navigate back to the home page.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void goBackToHome() {
         while (!isHamburgerMenuDisplayed()) {
@@ -63,7 +63,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Skip the initial login screen if present.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void skipInitialLoginScreen() {
         By nativeCompleteWithPopup = By.xpath("//android.widget.TextView[@resource-id='miuix.stub:id/alertTitle']//..//android.widget.Button[@text='Cancel']");
@@ -80,7 +80,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Close the login pop-up if visible.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void closeLoginPopUp() {
         By loginAlertCloseButton = homePage.getCloseLoginAlert();
@@ -93,7 +93,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Close any displayed ads.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void closeAdsIfAny() {
         if (isVisible(homePage.getAdBar())) {
@@ -106,7 +106,7 @@ public class HomePage extends AppiumUtils {
      * Check if the logo is displayed.
      *
      * @return true if the logo is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isLogoDisplayed() {
         //return isVisible(homePage.getLogo());
@@ -118,7 +118,7 @@ public class HomePage extends AppiumUtils {
      * Check if the hamburger menu is displayed.
      *
      * @return true if the hamburger menu is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isHamburgerMenuDisplayed() {
         return waitAndCheckIsVisible(homePage.getDrawerButton(), Duration.ofSeconds(5));
@@ -128,7 +128,7 @@ public class HomePage extends AppiumUtils {
      * Check if My Cash is displayed.
      *
      * @return true if My Cash is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isMyCashDisplayed() {
         return isVisible(homePage.getMyCash());
@@ -138,7 +138,7 @@ public class HomePage extends AppiumUtils {
      * Check if My Biz is displayed.
      *
      * @return true if My Biz is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isMyBizDisplayed() {
         return isVisible(homePage.getMyBiz());
@@ -148,7 +148,7 @@ public class HomePage extends AppiumUtils {
      * Check if the search icon is displayed.
      *
      * @return true if the search icon is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isSearchIconDisplayed() {
         return isVisible(homePage.getSearchIcon()) | isVisible(homePage.getSearchBar());
@@ -158,7 +158,7 @@ public class HomePage extends AppiumUtils {
      * Check if the navigation bar is displayed.
      *
      * @return true if the navigation bar is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isNavBarDisplayed() {
         return isVisible(homePage.getBottomTabs());
@@ -168,7 +168,7 @@ public class HomePage extends AppiumUtils {
      * Get the count of navigation bar items.
      *
      * @return the count of navigation bar items.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public int navBarItemsCount() {
         return getElements(homePage.getBottomTabs()).size();
@@ -178,7 +178,7 @@ public class HomePage extends AppiumUtils {
      * Get the text of navigation bar items.
      *
      * @return a list containing the text of navigation bar items.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public List<String> navBarItems() {
         List<String> navBarItems = new ArrayList<>();
@@ -193,7 +193,7 @@ public class HomePage extends AppiumUtils {
      * Check if the primary line of business is displayed.
      *
      * @return true if the primary line of business is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isPrimaryLobDisplayed() {
         return isVisible(homePage.getPrimaryLob());
@@ -203,7 +203,7 @@ public class HomePage extends AppiumUtils {
      * Get the count of primary line of business items.
      *
      * @return the count of primary line of business items.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public int primaryLobItemsCount() {
         return getElements(homePage.getPrimaryLobItems()).size();
@@ -213,7 +213,7 @@ public class HomePage extends AppiumUtils {
      * Get the text of primary line of business items.
      *
      * @return a list containing the text of primary line of business items.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public List<String> primaryLobItems() {
         return getElementsTextContent((homePage.getPrimaryLobItems()));
@@ -223,7 +223,7 @@ public class HomePage extends AppiumUtils {
      * Check if the secondary line of business is displayed.
      *
      * @return true if the secondary line of business is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isSecondaryLobDisplayed() {
         return isVisible(homePage.getSecondaryLob());
@@ -233,7 +233,7 @@ public class HomePage extends AppiumUtils {
      * Get the count of secondary line of business items.
      *
      * @return the count of secondary line of business items.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public int secondaryLobItemsCount() {
         return getElements(homePage.getSecondaryLobItems()).size();
@@ -243,7 +243,7 @@ public class HomePage extends AppiumUtils {
      * Get the text of secondary line of business items.
      *
      * @return a list containing the text of secondary line of business items.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public List<String> secondaryLobItems() {
         return getElementsTextContent(homePage.getSecondaryLobItems());
@@ -253,7 +253,7 @@ public class HomePage extends AppiumUtils {
      * Check if the expand line of business button is visible.
      *
      * @return true if the expand line of business button is visible, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isExpandLobButtonVisible() {
         return isVisible(homePage.getGetSecondaryLobExpand());
@@ -262,7 +262,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Handle the call to action (CTA) if visible.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void handleCta() {
         if (isVisible(homePage.getCta())) {
@@ -274,7 +274,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Handle the bottom sheet ad if visible.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void handleBottomSheetAd() {
         By closeButton = homePage.getDismissButton();
@@ -287,7 +287,7 @@ public class HomePage extends AppiumUtils {
     /**
      * Click on the expand line of business button.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void clickOnExpandLobButton() {
         click(homePage.getGetSecondaryLobExpand());
@@ -297,7 +297,7 @@ public class HomePage extends AppiumUtils {
      * Click on a line of business item.
      *
      * @param lobName The name of the line of business item to click.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void clickOnLob(String lobName) {
         waitAndClick(homePage.getLobItem(lobName), 5);

@@ -16,7 +16,7 @@ import static io.github.the_sdet.common.CommonUtils.formatDate;
 /**
  * Page Object class for Flights page to have modular methods to handle element interactions
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings("unused")
 public class FlightsPage extends HomePage {
@@ -26,7 +26,7 @@ public class FlightsPage extends HomePage {
      * Constructor to initialize AppiumUtils.
      *
      * @param driver The Appium Driver (AndroidDriver/IOSDriver) instance to use.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public FlightsPage(AppiumDriver driver) {
         super(driver);
@@ -37,7 +37,7 @@ public class FlightsPage extends HomePage {
      * Check if the Flights page header is displayed.
      *
      * @return true if the Flights page header is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isFlightsPageHeaderDisplayed() {
         return waitAndCheckIsVisible(flightsPage.getFlightsHeader(), Duration.ofSeconds(10));
@@ -47,7 +47,7 @@ public class FlightsPage extends HomePage {
      * Check if the back button is displayed.
      *
      * @return true if the back button is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isBackButtonDisplayed() {
         return isVisible(flightsPage.getBackButton());
@@ -56,7 +56,7 @@ public class FlightsPage extends HomePage {
     /**
      * Click on the back button.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void clickOnBackButton() {
         click(flightsPage.getBackButton());
@@ -66,7 +66,7 @@ public class FlightsPage extends HomePage {
      * Click on a tab with the given name.
      *
      * @param tabName The name of the tab to click.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void clickOnTab(String tabName) {
         click(flightsPage.getTab(tabName));
@@ -77,7 +77,7 @@ public class FlightsPage extends HomePage {
      *
      * @param tabName The name of the tab to check.
      * @return true if the tab is selected, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isTabSelected(String tabName) {
         return waitAndFindElement(flightsPage.getTab(tabName)).isSelected();
@@ -87,7 +87,7 @@ public class FlightsPage extends HomePage {
      * Check if the departure input is displayed.
      *
      * @return true if the departure input is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isDepartureInputDisplayed() {
         return isVisible(flightsPage.getSearchButton());
@@ -97,7 +97,7 @@ public class FlightsPage extends HomePage {
      * Check if the destination input is displayed.
      *
      * @return true if the destination input is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isDestinationInputDisplayed() {
         return isVisible(flightsPage.getSearchButton());
@@ -107,7 +107,7 @@ public class FlightsPage extends HomePage {
      * Check if the from-date input is displayed.
      *
      * @return true if the from-date input is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isFromDateDisplayed() {
         return isVisible(flightsPage.getFromDate());
@@ -117,7 +117,7 @@ public class FlightsPage extends HomePage {
      * Check if the traveller and class input is displayed.
      *
      * @return true if the traveller and class input is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isTravellerAndClassInputDisplayed() {
         return isVisible(flightsPage.getSearchButton());
@@ -127,7 +127,7 @@ public class FlightsPage extends HomePage {
      * Check if the search flights button is displayed.
      *
      * @return true if the search flights button is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isSearchFlightsButtonDisplayed() {
         return isVisible(flightsPage.getSearchButton());
@@ -137,7 +137,7 @@ public class FlightsPage extends HomePage {
      * Get the selected from city.
      *
      * @return the selected from city.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getSelectedFromCity() {
         return getElementTextContent(flightsPage.getFromSelectedCity());
@@ -147,7 +147,7 @@ public class FlightsPage extends HomePage {
      * Get the selected from city code.
      *
      * @return the selected from city code.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getSelectedFromCityCode() {
         return getElementTextContent(flightsPage.getFromSelectedCityCode());
@@ -157,7 +157,7 @@ public class FlightsPage extends HomePage {
      * Get the selected from city airport.
      *
      * @return the selected from city airport.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getSelectedFromCityAirport() {
         return getElementTextContent(flightsPage.getFromSelectedAirport());
@@ -167,7 +167,7 @@ public class FlightsPage extends HomePage {
      * Get the selected to city.
      *
      * @return the selected to city.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getSelectedToCity() {
         return getElementTextContent(flightsPage.getToSelectedCity());
@@ -177,7 +177,7 @@ public class FlightsPage extends HomePage {
      * Get the selected to city code.
      *
      * @return the selected to city code.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getSelectedToCityCode() {
         return getElementTextContent(flightsPage.getToSelectedCityCode());
@@ -187,7 +187,7 @@ public class FlightsPage extends HomePage {
      * Get the selected to city airport.
      *
      * @return the selected to city airport.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getSelectedToCityAirport() {
         return getElementTextContent(flightsPage.getToSelectedAirport());
@@ -197,7 +197,7 @@ public class FlightsPage extends HomePage {
      * Get the selected date.
      *
      * @return the selected date string.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getSelectedDate() {
         String dateAndMonth = getElementTextContent(flightsPage.getFromDateSelected());
@@ -216,7 +216,7 @@ public class FlightsPage extends HomePage {
      *
      * @param inputBox The input box name.
      * @return true if the input box is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isInputBoxDisplayed(String inputBox) {
         switch (inputBox.toLowerCase()) {

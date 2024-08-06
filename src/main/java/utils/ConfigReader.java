@@ -10,7 +10,7 @@ import java.util.Properties;
  * It loads properties from files: config.properties, android-config.properties, ios-config.properties.
  * Provides methods to access specific properties.
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings("unused")
 public class ConfigReader {

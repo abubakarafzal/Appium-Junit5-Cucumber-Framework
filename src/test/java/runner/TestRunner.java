@@ -6,7 +6,7 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 /**
  * Runner class to glue features and step definitions
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @Suite
 @IncludeEngines("cucumber")

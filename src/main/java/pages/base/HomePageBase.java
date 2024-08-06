@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
  * Class to maintain abstract methods for of Home page Elements,
  * so that Android and IOS both have the same methods
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
 public abstract class HomePageBase {

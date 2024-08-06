@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Page Object class for Menu Drawer page to have modular methods to handle element interactions
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings("unused")
 public class MenuPage extends HomePage {
@@ -15,7 +15,7 @@ public class MenuPage extends HomePage {
      * Constructor to initialize AppiumUtils.
      *
      * @param driver The Appium Driver (AndroidDriver/IOSDriver) instance to use.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public MenuPage(AppiumDriver driver) {
         super(driver);
@@ -24,7 +24,7 @@ public class MenuPage extends HomePage {
     /**
      * Click on the hamburger menu icon.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void clickOnHamburgerMenu() {
         click(homePage.getDrawerButton());
@@ -34,7 +34,7 @@ public class MenuPage extends HomePage {
      * Check if the menu drawer is displayed.
      *
      * @return true if the menu drawer is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isMenuDrawerDisplayed() {
         return isVisible(homePage.getMenuDrawer());
@@ -43,7 +43,7 @@ public class MenuPage extends HomePage {
     /**
      * Close the menu drawer by swiping left.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public void closeMenuDrawer() {
         swipeLeft(homePage.getMenuDrawer());
@@ -53,7 +53,7 @@ public class MenuPage extends HomePage {
      * Check if the login/sign-up button is displayed in the menu drawer.
      *
      * @return true if the login/sign-up button is displayed, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isLoginSignUpButtonDisplayed() {
         return isVisible(homePage.getLoginSignUpButton());
@@ -63,7 +63,7 @@ public class MenuPage extends HomePage {
      * Get the text of primary items in the menu drawer.
      *
      * @return a list containing the text of primary items in the menu drawer.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public List<String> drawerPrimaryItems() {
         return getElementsTextContent(homePage.getPrimaryItemsInMenuDrawer(), true);
@@ -75,7 +75,7 @@ public class MenuPage extends HomePage {
      * @param section The name of the section to check.
      * @return true if the section is displayed, false otherwise.
      * @throws IllegalArgumentException if the section name is invalid.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean isSectionDisplayedOnMenuDrawer(String section) {
         switch (section.toLowerCase()) {
@@ -96,7 +96,7 @@ public class MenuPage extends HomePage {
      * @param sectionName The name of the section.
      * @return a list containing the text of items under the section.
      * @throws IllegalArgumentException if the section name is invalid.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public List<String> getItemsUnderSection(String sectionName) {
         switch (sectionName.toLowerCase()) {
@@ -117,7 +117,7 @@ public class MenuPage extends HomePage {
      * @param item The name of the item to verify.
      * @return true if the item is displayed, false otherwise.
      * @throws IllegalArgumentException if the item name is invalid.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public boolean verifyMenuDrawerBottom(String item) {
         switch (item.toLowerCase()) {
@@ -136,7 +136,7 @@ public class MenuPage extends HomePage {
      * Get the app version displayed at the bottom of the menu drawer.
      *
      * @return the app version.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public String getAppVersion() {
         return getElement(homePage.getMenuDrawerBottomLinks("App Version"))

@@ -14,7 +14,7 @@ import static utils.ResultManager.*;
 /**
  * Hooks class containing setup and tear-down methods for test scenarios.
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings("unused")
 public class Hooks {
@@ -25,7 +25,7 @@ public class Hooks {
     /**
      * Method executed before all tests.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     @BeforeAll
     public static void beforeAll() {
@@ -36,7 +36,7 @@ public class Hooks {
      * Method executed before each test.
      *
      * @param scenario The scenario being executed.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     @Before
     public void beforeTest(Scenario scenario) {
@@ -56,7 +56,7 @@ public class Hooks {
      * Method executed after each test.
      *
      * @param scenario The scenario being executed.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     @After
     public void afterTest(Scenario scenario) {
@@ -68,7 +68,7 @@ public class Hooks {
     /**
      * Method executed after all tests.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     @AfterAll
     public static void afterAll() {

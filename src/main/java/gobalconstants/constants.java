@@ -3,7 +3,7 @@ package gobalconstants;
 /**
  * Class to handle Constants
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 public class constants {
     public static final String EMPTY_STRING = "";

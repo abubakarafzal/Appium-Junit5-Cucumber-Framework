@@ -8,7 +8,7 @@ import static io.github.the_sdet.web.Utils.customizeXpath;
 /**
  * Class to maintain elements of Home page for IOS
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
 public class HomePageIOS extends HomePageBase {

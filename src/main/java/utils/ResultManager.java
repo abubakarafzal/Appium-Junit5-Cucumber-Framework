@@ -11,7 +11,7 @@ import java.util.Map;
  * Class to manage test results.
  * It initializes and updates test results, and prints them.
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 public class ResultManager {
 
@@ -21,7 +21,7 @@ public class ResultManager {
      * Initializes the result collector for a given feature.
      *
      * @param featureName The name of the feature.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void initializeResultCollector(String featureName) {
         HashMap<STATUS, Integer> resultInitializer = new HashMap<>();
@@ -33,7 +33,7 @@ public class ResultManager {
     /**
      * Prints the test results.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void printResult() {
         for (Map.Entry<String, Map<STATUS, Integer>> entry : resultCollector.entrySet()) {
@@ -49,7 +49,7 @@ public class ResultManager {
      *
      * @param scenario    The scenario being executed.
      * @param featureName The name of the feature associated with the scenario.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void updateResult(Scenario scenario, String featureName) {
         Map<STATUS, Integer> resultKey = resultCollector.get(featureName);

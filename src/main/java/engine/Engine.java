@@ -21,7 +21,7 @@ import static utils.ConfigReader.*;
 /**
  * Class to handle Appium Driver Initialization, termination and other driver management utils.
  *
- * @author Pabitra Swain (contact.the.sdet@gmail.com)
+ * @author Abu bakar
  */
 @SuppressWarnings("unused")
 public class Engine {
@@ -36,7 +36,7 @@ public class Engine {
      * Check if the platform is Android.
      *
      * @return true if platform is Android, false otherwise.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static boolean isAndroid() {
         return platform.equals("android");
@@ -46,7 +46,7 @@ public class Engine {
      * Check if the execution is to be done on local
      *
      * @return true if local execution, false otherwise
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static boolean isLocal() {
         return executionType.equals("local");
@@ -56,7 +56,7 @@ public class Engine {
      * Start the Appium server.
      *
      * @return URL of the started Appium server.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static URL startAppiumServer() {
         AppiumServiceBuilder builder = new AppiumServiceBuilder()
@@ -75,7 +75,7 @@ public class Engine {
     /**
      * Stop the Appium server if it is running.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void stopAppiumServer() {
         if (service != null && service.isRunning()) {
@@ -87,7 +87,7 @@ public class Engine {
     /**
      * Initialize the Appium driver based on the platform and execution type.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void initializeDriver() {
         Properties properties = getProperties();
@@ -116,7 +116,7 @@ public class Engine {
      * Get the current Appium driver.
      *
      * @return the current Appium driver.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static AppiumDriver getDriver() {
         return tlDriver.get();
@@ -128,7 +128,7 @@ public class Engine {
      * Waits for a short duration before quitting the driver.
      * Logs information when the app is terminated and driver is quit.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void quitDriver() {
         AppiumDriver driver = tlDriver.get();
@@ -149,7 +149,7 @@ public class Engine {
      * Activate the app associated with the current driver.
      * Logs information when the app is activated.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void activateApp() {
         if (isAndroid()) {
@@ -165,7 +165,7 @@ public class Engine {
     /**
      * Relaunch the app associated with the current driver.
      *
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     public static void relaunchApp() {
         if (isAndroid()) {
@@ -191,7 +191,7 @@ public class Engine {
      *
      * @param url the string representation of the URL.
      * @return the URL object parsed from the string.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     private static URL frameUrl(String url) {
         try {
@@ -206,7 +206,7 @@ public class Engine {
      * Get Android desired capabilities.
      *
      * @return DesiredCapabilities object for Android.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     private static DesiredCapabilities getAndroidDesiredCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -239,7 +239,7 @@ public class Engine {
      * Get iOS desired capabilities.
      *
      * @return DesiredCapabilities object for iOS.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     private static DesiredCapabilities getIosDesiredCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -272,7 +272,7 @@ public class Engine {
      * Get Android remote desired capabilities.
      *
      * @return MutableCapabilities object for Android remote execution.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     private static MutableCapabilities getAndroidRemoteDesiredCapabilities() {
         Properties androidProperties = getAndroidProperties();
@@ -304,7 +304,7 @@ public class Engine {
      * Get iOS remote desired capabilities.
      *
      * @return MutableCapabilities object for iOS remote execution.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     private static MutableCapabilities getIosRemoteDesiredCapabilities() {
         Properties iosProperties = getIosProperties();
@@ -337,7 +337,7 @@ public class Engine {
      * Get Sauce Labs options.
      *
      * @return MutableCapabilities object for Sauce Labs options.
-     * @author Pabitra Swain (contact.the.sdet@gmail.com)
+     * @author Abu bakar
      */
     private static MutableCapabilities getSauceOptions() {
         Properties properties = getProperties();
