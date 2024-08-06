@@ -325,27 +325,3 @@ Various Reports are generated in testReports directory after the execution
 
 Logs are written to console and as well as to log file. Log file can be found at <code>z_logs</code> directory
 
-## Authors
-
-<a href="https://github.com/the-sdet"><img align="center" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="pabitra-qa" height="40" width="40" /></a>
-[@the-sdet](https://github.com/the-sdet)
-
-<a href="https://github.com/the-sdet"><img align="center" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="pabitra-qa" height="40" width="40" /></a>
-[@pabitra-qa](https://github.com/pabitra-qa)
-
-## About Me
-
-I'm a dedicated and passionate Software Development Engineer in Test (SDET) trying to help the community.
-
-## Connect With Me
-
-Connect with me over LinkedIn or visit my Website...
-
-<a href="https://linkedin.com/in/pswain7"><img align="center" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt="pabitra-qa" height="35"/></a>
-&nbsp; <a href="https://pabitra-qa.github.io/"><img align="center" src="https://chromeenterprise.google/static/images/chrome-logo.svg" height="40" width="40"/></a>
-
-## Feedback
-
-If you have any feedback, please reach out to us at [contact.the.sdet@gmail.com](mailto:contact.the.sdet@gmail.com).
-# Appium-Junit5-Cucumber-Framework
-# Appium-Junit5-Cucumber-Framework
